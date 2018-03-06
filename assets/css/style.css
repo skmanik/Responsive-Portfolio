@@ -16,7 +16,6 @@ body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     background: #eee url('../images/pattern.png') repeat fixed;
-    min-width: 960px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -111,7 +110,7 @@ nav .folio-tabs a:last-child {
 .main .bio {
     padding: 30px;
     background: #fff;
-    width: 650px;
+    width: 68%;
     float: left;
     border: 1px solid #dddddd;
 }
@@ -130,11 +129,10 @@ nav .folio-tabs a:last-child {
 
 .main .side-panel {
     padding: 30px;
-    width: 270px;
-    height: 200px;
+    width: 28%;
     background: #fff;
     float: left;
-    margin-left: 40px;
+    margin-left: 4%;
     border: 1px solid #dddddd;
 }
 
@@ -298,11 +296,11 @@ nav .folio-tabs a:focus {
     }
 
     .main .bio {
-        width: 450px;
+        width: 61%;
     }
 
     .main .side-panel {
-        width: 260px;
+        width: 35%;
     }
 
     .main .bio p img {
@@ -313,6 +311,27 @@ nav .folio-tabs a:focus {
 }
 
 @media screen and (max-width: 768px) {
+
+    nav .wrapper, .main {
+        width: 710px;
+    }
+
+    .main .bio {
+        float: none;
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .main .side-panel {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .main .bio p img {
+        float: left;
+        width: 250px;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 640px) {
